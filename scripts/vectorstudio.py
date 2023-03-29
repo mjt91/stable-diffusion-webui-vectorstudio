@@ -111,7 +111,8 @@ class Script(scripts.Script):
         # Add the prompt from above
         p.prompt += StyleDict[poUseColor]
 
-        PO_TO_CALL = scripts.basedir() + "\\extensions\\stable-diffusion-webui-vectorstudio\\bin\\potrace.exe"
+        #PO_TO_CALL = scripts.basedir() + "\\extensions\\stable-diffusion-webui-vectorstudio\\bin\\potrace.exe"
+        PO_TO_CALL = scripts.basedir() + "/extensions/stable-diffusion-webui-vectorstudio/bin/potrace.exe"
         proc = process_images(p)
         mixedImages = []
 
